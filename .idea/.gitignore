@@ -12,5 +12,9 @@
 # Log file
 *.log
 
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 out/
-/.idea/
