@@ -10,4 +10,5 @@
 *.class
 *.jar
 
-/out/
+out/
+.idea/
