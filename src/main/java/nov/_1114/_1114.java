@@ -1,26 +1,22 @@
 package nov._1114;
 
-import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class _1114 {
-    public int[] solution(int start_num, int end_num) {
+    public List<Integer> solution(int start_num, int end_num) {
         //list 길이 설정
-        int listLength = end_num - start_num + 1;
-        int[] answer = new int[listLength];
-        //for문으로 리스트에 넣기
-        if(start_num >= 0 && start_num <= end_num && end_num <= 50) {
-            for (int i = 0; i < listLength; i++) {
-                answer[i] = start_num + i;
-            }
-            return answer;
+        List<Integer> answer = new ArrayList<>();
+        for(int i = start_num; i <= end_num; i++) {
+            answer.add(i);
         }
-        return null;
+        return answer;
     }
 
     public static void main(String[] args) {
         _1114 test = new _1114();
-        int[] result = test.solution(3,7);
-        System.out.println(Arrays.toString(result));
+        List<Integer> solution = test.solution(3, 7);
+        System.out.println(solution);
     }
 }

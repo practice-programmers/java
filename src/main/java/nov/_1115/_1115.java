@@ -20,7 +20,19 @@ public class _1115 {
         }
         return answer;
     }
-
+    public int[] newSol(int[] arr) {
+        int[] answer = new int[arr.length];
+        for (int i : arr) {
+            if(i >= 50 && i % 2 == 0) {
+                answer[i] = i / 2;
+            } else if (i < 50 && i % 2 == 1) {
+                answer[i] = i * 2;
+            } else {
+                answer[i] = i;
+            }
+        }
+        return answer;
+    }
     public static void main(String[] args) {
         _1115 test = new _1115();
         int[] testArr = {1,50,79};

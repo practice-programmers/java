@@ -2,12 +2,14 @@ package nov._1113;
 
 public class _1113 {
     public String solution(String myString) {
-        String answer = "";
-        if (!myString.isEmpty() && myString.length() <= 100000) {
-            answer = myString;
-            return answer.toUpperCase();
+        extracted(myString);
+        return myString.toUpperCase();
+    }
+
+    private static void extracted(String myString) {
+        if (myString.isEmpty() || myString.length() > 100000) {
+            throw new IllegalArgumentException();
         }
-        return "error";
     }
 
     public static void main(String[] args) {
