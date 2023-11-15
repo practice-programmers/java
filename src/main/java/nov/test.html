@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .goog-trans{background:#f0f0f0}
+        .goog-trans-control{float:left;height:40px}
+        .goog-trans-control a{display:inline-block;padding:0 10px;height:40px;line-height:40px;background:#383838;color:#fff;text-align:center;text-decoration:none}
+        .goog-trans-info{float:left;margin:0 0 0 10px;height:40px;line-height:40px;color:#686868}
+        .goog-trans:after{display:block;visibility:hidden;clear:both;content:''}
+    </style>
+
+</head>
+    <script>
+        function googleSectionalElementInit() {
+            // new google.translate.SectionalElement({
+            //     sectionalNodeClassName: 'goog-trans-section',
+            //     controlNodeClassName: 'goog-trans-control',
+            //     background: '#78E7FF'
+            // }, 'google_sectional_element');
+            new google.translate.TranslateElement({pageLanguage: 'kor'}, 'google_translate_element');
+        }
+    </script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleSectionalElementInit&ug=section&hl=ko"></script>
+<body>
+
+
+<div id="google_sectional_element" style="display:none"></div>
+<div class="goog-trans-section">
+    <div class="goog-trans">
+        <div class="goog-trans-control"></div>
+        <div class="goog-trans-info">[번역]을 누르시면 번역이 됩니다.</div>
+    </div>
+    <div id="google_translate_element_area">The page you are looking at is being generated dynamically by CodeIgniter.</div>
+    <div id="google_translate_element"></div>
+</div>
+
+</body>
+</html>
