@@ -6,3 +6,5 @@ X의 맨 뒤에 a를 a번 추가하는 일을 반복한 뒤의 배열 X를 retur
 ### 제한사항
 1 ≤ arr의 길이 ≤ 100
 1 ≤ arr의 원소 ≤ 100
+
+https://school.programmers.co.kr/learn/courses/30/lessons/181861
